@@ -1,3 +1,5 @@
+import jdk.internal.icu.impl.CharacterIteratorWrapper;
+
 import java.util.Scanner;
 
 import java.util.concurrent.TimeUnit;
@@ -77,17 +79,18 @@ class Sports {
                     System.out.println("If the muscle strength has improved, the training intensity and plan for the next week should be formulated according to the latest maximum load, and protein should be added to promote muscle growth after fitness.");
                     System.out.println("Considering that you have an old injury, please pay attention to moderate exercise");
                 }
-
+        System.out.println("Input anything to quit:");
             }
 
-            System.out.println("Input anything to quit:");
-            String answer = scanner.next();
+
+    private CharacterIteratorWrapper scanner;
+    String answer = String.valueOf(scanner.next());
 
 
-
-
-
+    public void setScanner(CharacterIteratorWrapper scanner) {
+        this.scanner = scanner;
     }
+}
 
 
 

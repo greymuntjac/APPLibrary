@@ -15,8 +15,9 @@ import java.util.Random;
                 double youranswer;
                 double rightanswer;
                 int choice=scanner.nextInt();
-                double num1=random.nextDouble(0,100);
-                double num2=random.nextDouble(0,100);
+                Scanner random = null;
+                double num1=random.nextDouble();
+                double num2=random.nextDouble();
 
 
                 if (choice!= 1&&choice!=2&&choice!=3&&choice!=4){

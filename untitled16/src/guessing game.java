@@ -61,6 +61,7 @@ class guessinggame {
                         continue;
                     }}
 
+                Scanner random = null;
                 int computer1Choice = random.nextInt(3) + 1;
                 int computer2Choice = random.nextInt(3) + 1;
                 try {
