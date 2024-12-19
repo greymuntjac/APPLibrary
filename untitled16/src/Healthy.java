@@ -1,29 +1,9 @@
-import java.util.Random;
 import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
 class Healthy {
     public void Healthy() {
         while (true) {
-            Random random=new Random();
-            int color=random.nextInt(31,37);
-            if(color==31){
-                System.out.println("\033[31m");
-            }
-            else if(color==32){
-                System.out.println("\033[32m");
-            }
-            else if(color==33){
-                System.out.println("\033[33m");
-            } else if(color==34){
-                System.out.println("\033[34m");
-            } else if(color==35){
-                System.out.println("\033[35m");
-            } else if(color==36){
-                System.out.println("\033[36m");
-            } else{
-                System.out.println("\033[37m");
-            }
             Scanner scanner = new Scanner(System.in);
 
             System.out.println("Welcome to the health monitoring system.");

@@ -1,36 +1,13 @@
-import java.lang.ref.Cleaner;
 import java.util.InputMismatchException;
 import java.util.Random;
 import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
 
-public class Main {
 
     public static void main(String[] args) {
-        Random random=new Random();
         Scanner scanner = new Scanner(System.in);
-
         while (true) {
-            int color=random.nextInt(31,37);
-            if(color==31){
-            System.out.println("\033[31m");
-            }
-            else if(color==32){
-                System.out.println("\033[32m");
-            }
-            else if(color==33){
-                System.out.println("\033[33m");
-            } else if(color==34){
-                System.out.println("\033[34m");
-            } else if(color==35){
-                System.out.println("\033[35m");
-            } else if(color==36){
-                System.out.println("\033[36m");
-            } else{
-                System.out.println("\033[37m");
-            }
-
             System.out.println("""
                     -------------App Library------------
                     |  a) Sports management            |
@@ -39,9 +16,6 @@ public class Main {
                     |  d) Calculator                   |
                     |  e) Healthy                      |
                     |  f) Compute                      |
-                    |  g) Five-in-five                 |
-                    |  h) Fate                         |
-                    |  i) Exit                         |
                      ----------------------------------""");
             try {
                 TimeUnit.SECONDS.sleep(1);
@@ -81,23 +55,9 @@ public class Main {
 
 
                 case "g":
-                    fiveinfive Fiveinfive=new fiveinfive();
-                    Fiveinfive.fiveinfive();
-                    break;
-
-                case "h":
-                    Fate fate=new Fate();
-                    fate.Fate();
-                    break;
-
-
-                case "i":
                     System.out.println("Exiting...bye.");
                     System.exit(0);
             }
-
-
         }
     }
-
 }
